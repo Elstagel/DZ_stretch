@@ -11,12 +11,16 @@
             <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <StackPanel>
-              <RadioButton x:Name="RadioButton_Fill" Click="RadioButtonFill_Click" >Fill</RadioButton>
-              <RadioButton x:Name="RadioButton_None" Click="RadioButtonNone_Click" >None</RadioButton>
-              <RadioButton x:Name="RadioButton_Uniform" Click="RadioButtonUniform_Click" >Uniform</RadioButton>
-              <RadioButton x:Name="RadioButton_UniformToFill" Click="RadioButtonUniformToFill_Click" >UniformToFill</RadioButton>
-        </StackPanel>
+        <GroupBox Grid.Column="0" Header="Stretch">
+             <Canvas Margin="5">
+                <StackPanel>
+                    <RadioButton x:Name="RadioButton_Fill" Click="RadioButtonFill_Click" >Fill</RadioButton>
+                    <RadioButton x:Name="RadioButton_None" Click="RadioButtonNone_Click" >None</RadioButton>
+                    <RadioButton x:Name="RadioButton_Uniform" Click="RadioButtonUniform_Click" >Uniform</RadioButton>
+                    <RadioButton x:Name="RadioButton_UniformToFill" Click="RadioButtonUniformToFill_Click" >UniformToFill</RadioButton>
+                </StackPanel>
+             </Canvas>
+        </GroupBox>
         <Image Grid.Column="1" x:Name="ImgDzirt" Source="/img/1.png" />
     </Grid>
 </Window>
